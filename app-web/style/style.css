@@ -1,0 +1,39 @@
+:root{
+    --black: #272D3B;
+    --red:#ED176F;
+    --coral:#F7817F;
+    --gradient: linear-gradient(90deg, var(--coral), var(--red));
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+}
+ *::selection{
+    background: var(--red);
+    color: white;
+ }
+ html{
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+ }
+ header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    z-index: 1000;
+    padding: 2rem 9%;
+    border-bottom: .1rem solid #fff3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
